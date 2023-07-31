@@ -37,11 +37,11 @@ module.exports = {
   ALIVE_MESSAGE:  process.env.ALIVE_MESSAGE === undefined ? '' : process.env.ALIVE_MESSAGE,
   autobio:  process.env.AUTO_BIO === undefined ? false : process.env.AUTO_BIO,
   OPENAI_API_KEY:  process.env.OPENAI_API_KEY === undefined ? false : process.env.OPENAI_API_KEY,
-  heroku:  process.env.heroku === undefined ? false : process.env.heroku,
+  heroku:  process.env.heroku === undefined ? true : process.env.heroku,
   HEROKU: {
-    HEROKU: process.env.HEROKU ||false,
-    API_KEY: process.env.HEROKU_API_KEY === undefined ? '1abfce1e-1bee-4334-9f6c-f4c1cb1cafab' : process.env.HEROKU_API_KEY,
-    APP_NAME: process.env.HEROKU_APP_NAME === undefined ? 'zeropgg' : process.env.HEROKU_APP_NAME
+    HEROKU: process.env.HEROKU ||true,
+    API_KEY: process.env.HEROKU_API_KEY === undefined ? '9f4edb18-0dd2-4027-a6e1-7eb58487924e' : process.env.HEROKU_API_KEY,
+    APP_NAME: process.env.HEROKU_APP_NAME === undefined ? 'black-it' : process.env.HEROKU_APP_NAME
 },
   VERSION: process.env.VERSION === undefined ? 'v.0.0.3' : process.env.VERSION,
   LANG: process.env.THEME|| 'SECKTOR',
